@@ -9,6 +9,7 @@ export default function App() {
   
   const [input, setInput] = useState()
   const [todas, setTodas] = useState([])
+  const [edittTodo, setEditetodo] = useState()
 
   return (
     <>
@@ -23,9 +24,11 @@ export default function App() {
              setInput={setInput}
              todas={todas}
              setTodas={setTodas}
+             edittTodo={edittTodo}
+             setEditetodo={setEditetodo}
            />
         </div>
-        <TodoList  todas={todas} setTodas={setTodas} />
+        <TodoList  todas={todas} setTodas={setTodas} edittTodo={edittTodo} setEditetodo={setEditetodo} />
       </div>
     </div>
     </>
