@@ -43,7 +43,7 @@ export default function Form({
     }
   };
   return (
-    <form action="" onSubmit={onFormSubmit}>
+      <form action="" onSubmit={onFormSubmit} className="text_form" >
       <input
         type="text"
         placeHolder=""

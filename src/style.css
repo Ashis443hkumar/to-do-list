@@ -3,15 +3,71 @@
   margin: 0%;
   box-sizing: border-box;
 }
-
-.button_add{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container{
+  width: 400px;
+  height: 400px;
+  background-color: skyblue;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
 }
-button{
-  padding: 10px 16px;
+.text_form{
+  width: 360px;
+  height: 30px;
+  margin: 20px auto;
+}
+.text_form input{
+  width: 300px;
+  height: 30px;
+  text-transform: capitalize;
+  padding: 10px;
+  font-weight: 500;
+}
+.add_button{
+  width: 50px;
+  height: 30px;
   outline: none;
   border: none;
+  margin-left: 10px;
+}
+.todo-list{
+  width: 360px;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-between;
+  align-items: center;
 
+}
+.todo-list input{
+  outline: none;
+  border: none;
+  background: none;
+  padding: 10px ;
+}
+
+.button_add .task_button{
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  background: none;
+}
+.button_add .task_button i{
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+.button_check i{
+  background-color: green;
+}
+.button_edit i{
+  background: cyan;
+}
+.button_delete i{
+  background-color: crimson;
 }
