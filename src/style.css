@@ -4,17 +4,32 @@
   box-sizing: border-box;
 }
 .container{
-  width: 400px;
-  height: 400px;
-  background-color: skyblue;
-  margin: 20px auto;
-  text-align: center;
-  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.app_container{
+  min-width: 450px;
+  min-height: 550px;
+  padding: 20px;
+  background-color: skyblue;
+  box-shadow: 0px 10px 40px #000;
+  margin-bottom: 20px;
+}
+h1{
+  text-align: center;
+}
+
 .text_form{
   width: 360px;
   height: 30px;
   margin: 20px auto;
+  font-size: 20px;
+  outline: none;
+  color: #ccc;
 }
 .text_form input{
   width: 300px;
@@ -38,13 +53,15 @@
   margin: 10px auto;
   justify-content: space-between;
   align-items: center;
-
 }
 .todo-list input{
   outline: none;
   border: none;
   background: none;
-  padding: 10px ;
+  padding: 10px;
+  color: #000;
+  font-size: 16px;
+  text-transform: capitalize;
 }
 
 .button_add .task_button{
@@ -70,4 +87,8 @@
 }
 .button_delete i{
   background-color: crimson;
+}
+input:focus,
+button:focus{
+  outline: none;
 }
